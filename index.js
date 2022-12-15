@@ -1,5 +1,6 @@
-const Discord = require("discord.js")
-import { token } from "./token";
+import Discord from "discord.js"
+import { token } from "./token.js";
+
 const client = new  Discord.Client({intents:[
     Discord.Intents.FLAGS.GUILDS,
     Discord.Intents.FLAGS.GUILD_MESSAGES,
