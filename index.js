@@ -57,7 +57,10 @@ const client = new  Discord.Client({intents:[
       let Mensagens = {
         'oi': 'salve felas',
         'bot de corno': 'tua mae vagabunda',
-        'quem fez': `O Rei né @valdim`
+        'quem fez o bot': `O Rei né @valdim`,
+        'osvaldo da a bunda': 'teu cu',
+        'bot viado': 'me mama',
+        'bot corno': 'te fuder'
     
       }
         if(Mensagens[msg.content]){
@@ -91,6 +94,14 @@ const client = new  Discord.Client({intents:[
        console.log(pessoas)
       
       })
-      
+
+      const Jogar = ()=>{
+        console.log('dale')
+      }
+      client.on("message", msg =>{
+        if(msg.content === 'jogar'){
+          Jogar()
+        }
+      })
   
   client.login(token)
