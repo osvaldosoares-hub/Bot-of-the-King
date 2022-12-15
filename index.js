@@ -1,13 +1,13 @@
 const Discord = require("discord.js")
-
+import { token } from "./token";
 const client = new  Discord.Client({intents:[
     Discord.Intents.FLAGS.GUILDS,
     Discord.Intents.FLAGS.GUILD_MESSAGES,
     Discord.Intents.FLAGS.DIRECT_MESSAGES,
     
   ]});
-  //console.log(Discord)
-  const token ='MTA0OTc5ODI4ODUzMjA1NDA0Ng.GHlcTM.F-CGBvCWq4VWLNEPGXMKu-kAoYG4Mxqy7WPhpw'
+  
+  
   
   client.on('ready', () => {
       console.log(`ta indo ${client.user.tag}` )
